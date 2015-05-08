@@ -5,14 +5,14 @@ var canvas,
     canvasHeight,
 
     defaultSettings = {
-      width: 960,
-      height: 480,
+      width: 900,
+      height: 450,
       padding: 10,
       background: '#0000bf',
       letterSize: 100,
       spaceSize: 40,
       lineSpace: 15,
-      scale: 2
+      scale: 1.5
     },
 
     settings = $.extend({}, defaultSettings),
@@ -145,7 +145,7 @@ function renderMessage() {
       letterSize = settings.letterSize * settings.scale,
       spaceSize = settings.spaceSize * settings.scale,
       lineSpace = settings.lineSpace * settings.scale,
-      maxX = (settings.width * settings.scale) - padding - letterSize,
+      maxX = (canvasWidth * settings.scale) - padding - letterSize,
       x = padding,
       y = padding;
 
@@ -164,7 +164,7 @@ function renderMessage() {
           image = $('<img src="' + src + '" />');
 
       // if not enough room on this line, go to the next line:
-      if (x >= maxX) {
+      if (x > maxX) {
         y += letterSize + lineSpace;
         x = padding;
       }
