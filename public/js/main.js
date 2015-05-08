@@ -12,7 +12,7 @@ var canvas,
       letterSize: 100,
       spaceSize: 40,
       lineSpace: 15,
-      scale: 4
+      scale: 2
     },
 
     settings = $.extend({}, defaultSettings),
