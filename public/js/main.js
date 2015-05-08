@@ -202,10 +202,12 @@ $(document).ready(function(){
   // type right away:
   $('.input').val('').focus();
 
+  /*
   $('.download-button').click(function() {
     $(this).attr('href',canvas.toDataURL("image/png"));
     //uriContent = "data:application/octet-stream," + encodeURIComponent(img);
     //window.open(uriContent, "Downloaded Image");
   });
+ *
 
 })
