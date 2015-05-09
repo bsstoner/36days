@@ -208,6 +208,6 @@ $(document).ready(function(){
     //uriContent = "data:application/octet-stream," + encodeURIComponent(img);
     //window.open(uriContent, "Downloaded Image");
   });
- *
+ */
 
 })
